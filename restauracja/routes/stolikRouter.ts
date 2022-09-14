@@ -16,7 +16,7 @@ router.post('/',async (req:Request, res:Response) =>{
     res.status(201).json(stolik);
 })
 
-router.get('/:id',async (req:Request, res:Response) => {
+router.get('/',async (req:Request, res:Response) => {
     const stolik = await stolikModels.find();
     res.status(201).send(stolik);
 })

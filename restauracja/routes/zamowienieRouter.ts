@@ -16,7 +16,7 @@ router.post('/',async (req:Request, res:Response) =>{
     res.status(201).json(zamowienie);
 })
 
-router.get('/:id',async (req:Request, res:Response) => {
+router.get('/',async (req:Request, res:Response) => {
     const zamowienie = await zamowienieModels.find();
     res.status(201).send(zamowienie);
 })
