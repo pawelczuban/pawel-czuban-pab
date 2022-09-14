@@ -8,9 +8,11 @@ app.use(express.json());
 
 router.post('/',async (req:Request, res:Response) =>{
     const zamowienie = new zamowienieModels({
-        nazwa:req.body.nazwa,
-        liczbaMiejsc:req.body.liczbaMiejsc,
-        status:req.body.status
+        pracownik:req.body.pracownik,
+        danie:req.body.danie,
+        status:req.body.status,
+        stolik:req.body.stolik,
+        cena:req.body.cena
     })
     const saveZamowienie = await zamowienie.save();
     res.status(201).json(zamowienie);
