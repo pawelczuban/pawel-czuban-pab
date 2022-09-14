@@ -16,4 +16,10 @@ app.use('/pracownik', pracownik);
 const produkt = require('./routes/produktRouter');
 app.use('/produkty', produkt);
 
+const restauracja = require('./routes/restauracjaRouter');
+app.use('/restauracje', restauracja);
+
+const rezerwacja = require('./routes/rezerwacjaRouter');
+app.use('/rezerwacje', rezerwacja);
+
 app.listen(3000)
