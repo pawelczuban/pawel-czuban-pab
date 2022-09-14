@@ -22,4 +22,10 @@ app.use('/restauracje', restauracja);
 const rezerwacja = require('./routes/rezerwacjaRouter');
 app.use('/rezerwacje', rezerwacja);
 
+const stolik = require('./routes/stolikRouter');
+app.use('/stoliki', stolik);
+
+const zamowienie = require('./routes/zamowienieRouter');
+app.use('/zamowienia', zamowienie);
+
 app.listen(3000)
