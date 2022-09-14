@@ -10,4 +10,10 @@ main();
 const danie = require('./routes/danieRouter');
 app.use('/dania', danie);
 
+const pracownik = require('./routes/pracownikRouter');
+app.use('/pracownik', pracownik);
+
+const produkt = require('./routes/produktRouter');
+app.use('/produkty', produkt);
+
 app.listen(3000)
